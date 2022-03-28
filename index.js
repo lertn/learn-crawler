@@ -24,7 +24,7 @@ const password = 'HALO&678dxcddd';
 superagent.get(`https:${username}:${password}//adq.chinacmbc.org/wp-login.php`).end((err, res) => {
   if (err) {
     // 如果访问失败或者出错，会这行这里
-    console.log(`热点新闻抓取失败 - ${err}`)
+    console.log(`抓取失败 - ${err}`)
   } else {
    // 访问成功，请求http://news.baidu.com/页面所返回的数据会包含在res
    // 抓取热点新闻数据
