@@ -20,8 +20,8 @@ let getHotNews = (res) => {
 
 const username = 'mgdemo@knownsec.com';
 const password = 'HALO&678dxcddd';
-
-superagent.get(`http:${username}:${password}//adq.chinacmbc.org/wp-login.php`).end((err, res) => {
+const host = 'adq.chinacmbc.org';
+superagent.get(`http:${username}:${password}//${host}/wp-login.php`).end((err, res) => {
   if (err) {
     // 如果访问失败或者出错，会这行这里
     console.log(`抓取失败 - ${err}`)
